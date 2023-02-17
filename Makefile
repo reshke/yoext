@@ -1,19 +1,19 @@
-# contrib/yobaext/Makefile
+# contrib/yoext/Makefile
 
-MODULE_big = yobaext
+MODULE_big = yoext
 
-EXTENSION = yobaext
-DATA = yobaext--1.0.sql 
-PGFILEDESC = "yobaext - checks if tables need vacuum or analyze"
+EXTENSION = yoext
+DATA = yoext--1.0.sql 
+PGFILEDESC = "yoext"
 
-REGRESS = yobaext
+REGRESS = yoext
 
 ifdef USE_PGXS
 PG_CONFIG = pg_config
 PGXS := $(shell $(PG_CONFIG) --pgxs)
 include $(PGXS)
 else
-subdir = contrib/yobaext
+subdir = contrib/yoext
 top_builddir = ../..
 include $(top_builddir)/src/Makefile.global
 include $(top_srcdir)/contrib/contrib-global.mk
