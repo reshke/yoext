@@ -1,0 +1,6 @@
+# yoext extension
+comment = 'no'
+default_version = '1.0'
+module_pathname = '$libdir/yoext'
+trusted=true
+relocatable = true
